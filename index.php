@@ -43,31 +43,7 @@ if ($request == '/' || $request == '/index'){
 }elseif ($request == '/Dashboard'){
     require __DIR__ . '/administrator/index.php';
 
-}elseif ($request == '/test-web'){
-    echo "hai";
-    // require __DIR__ . '/framework.php';
-
-}elseif ($request == '/framework-codeigniter-pengenalan'){
-    require __DIR__ . '/tentang.php';
-
-}elseif ($request == '/about-us'){
-    require __DIR__ . '/tentang.php';
-    
 }else{
-    require __DIR__ . '/404';
+    require __DIR__ . '/administrator/404.php';
 }
-// switch ($request) {
-//     case '/' :
-//         require __DIR__ . '/home.php';
-//         break;
-//     case '/ci-zaman-now' :
-//         require __DIR__ . '/framework.php';
-//         break;
-//     case '/about' :
-//         require __DIR__ . '/views/about.php';
-//         break;
-//     default:
-//         http_response_code(404);
-//         require __DIR__ . '/404.php';
-//         break;
-// }
+?>
